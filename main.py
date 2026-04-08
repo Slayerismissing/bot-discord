@@ -4,12 +4,15 @@ from gerar_pdf import gerar_pdf
 
 nome = input("Digite o nome do jogador: ")
 
+
 personagem = input("\nDigite o nome do seu personagem: ")
+
 
 classe = perguntar_opcao(
     "Digite a classe do personagem: ", #parâmetro MENSAGEM
     classes_validas #parâmetro OPÇÃO VALIDA
 )
+
 
 origem = perguntar_opcao(
     "Digite a origem do personagem: ", #parâmetro MENSAGEM
@@ -24,8 +27,10 @@ while True:
             print("O NEX precisa ser múltiplo de 5.")
     except ValueError:
         print("Digite apenas números.")
-    
+
+
 vida = calcular_vida(classe, nex)
+
 
 dados = {
     "untitled130":classe,
